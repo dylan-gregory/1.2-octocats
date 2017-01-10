@@ -1,4 +1,44 @@
-html{
-  background-color: orange;
-  
+*{
+  font-family: "Helvetica";
+  font-weight: bold;
+
+}
+
+
+
+.octocat img{
+  max-width: 30%;
+  border: 2px solid grey;
+}
+
+.octocat{
+  vertical-align: top;
+
+}
+
+.image-footer{
+  height: 50px;
+  text-align: right;
+}
+
+.image-number{
+  text-align: left;
+
+
+}
+
+.image-caption{
+  text-align: right;
+
+}
+
+.authors img{
+  float: right;
+  width: 10%;
+
+}
+.authors{
+
+
+
 }
