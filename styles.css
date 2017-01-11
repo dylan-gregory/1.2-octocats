@@ -511,12 +511,16 @@ margin-left: none;
   display: inline-block;
   vertical-align: top;
   max-width: 31%;
-  margin-left: 25px;
+  width: 375px;
+  margin-left: 35px;
+  margin-right: 0px;
   position: relative;
   left: -50px;
   top: 4px;
 
 }
+
+
 li{
   display: inline-block;
 }
@@ -524,13 +528,13 @@ li{
 .image-footer{
   display: inline-block;
   height: 40px;
+  width: 400px;
   text-align: right;
   margin-right: -20px;
   float: right;
   border-bottom: 2px solid #E2E2E2;
   position: relative;
   right: 0;
-
 
 }
 
@@ -541,20 +545,22 @@ li{
   color: #CCCCCC;
   vertical-align: middle;
   margin-left: 5px;
+  margin-top: 10px;
 
 
 }
 
 .image-caption{
   display: inline-block;
-  text-align: center;
+  text-align: right;
   vertical-align: middle;
   color: grey;
 
-
 }
 
-.image-caption a{
+.image-footer .image-caption a{
+  display: inline-block;
+  font-size: 16px;
   text-decoration: none;
   color: black;
 
@@ -562,14 +568,39 @@ li{
 
 
 
+.image-footer .image-caption span{
+  display: inline-block;
+  margin-top: 10px;
+  font-size: 14px;
+
+}
+
+
 .authors img{
   display: inline-block;
   float: right;
-  width: 10%;
+  width: 28px;
+  height: 28px;
   vertical-align: top;
-
+  border: 1px solid #E2E2E2;
+  padding: 0px;
+  margin-top:3px;
 
 }
+
+.image-footer:before{
+content: "";
+display: block;
+height: 0;
+width: 0;
+border: 8px solid transparent;
+border-top-color: #cacaca;
+position: absolute;
+right: 7px;
+top: 0;
+margin-top: -5px;
+}
+
 
 ul .authors{
   display: inline-block;
@@ -577,16 +608,26 @@ max-height: 5px;
 
 }
 
+
 .image-footer img{
   display: inline-block;
 vertical-align: top;
 
 }
 
+
 .image-caption li{
   display: inline-block;
 }
 
+
 .image-footer ul{
   vertical-align: top;
+}
+
+
+.image-caption span{
+  display: inline-block;
+  padding-left: -40px;
+
 }
